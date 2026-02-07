@@ -7,7 +7,7 @@
 
 ## Instruções
 - [X] Fork desse repositório
-- [ ] Criar e conectar um projeto no vercel ao repositório github
+- [X] Criar e conectar um projeto no vercel ao repositório github
 - [X] Escolha um tema para aplicativo
 - [X] Construa o HTML + CSS estático
 - [X] Pegue o HTML estático correspondente ao dado dinâmico e crie um json no js
