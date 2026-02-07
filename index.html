@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1> Minha Lista de Leitura</h1>
+        <button class="btn-adicionar" id="btnAdicionar">+ Adicionar livro</button>
+    </header>
+
+    <main class="container">
+        <section class="lista-livros" id="listaLivros">
+        </section>
+    </main>
+
+    <div id="formulario" class="formulario">
+        <input type="text" id="titulo" placeholder="Título do livro">
+        <input type="text" id="autor" placeholder="Autor">
+        <input type="file" id="capa" accept="image/*">
+        <button id="salvar">Salvar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

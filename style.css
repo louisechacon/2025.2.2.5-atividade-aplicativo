@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f6fa;
+    color: #333;
+}
+
+.topo {
+    background-color: #2d6cdf;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo h1 {
+    font-size: 24px;
+}
+
+.btn-adicionar {
+    background-color: #ffffff;
+    color: #2d6cdf;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-adicionar:hover {
+    background-color: #e4ecff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.lista-livros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.livro-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.livro-card:hover {
+    transform: translateY(-3px);
+}
+
+.livro-capa {
+    width: 100px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.livro-capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.livro-info h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.autor {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.nao-lido {
+    background-color: #ffe5e5;
+    color: #b30000;
+}
+
+.lido {
+    background-color: #e0f7e9;
+    color: #0a7a3b;
+}
+
+.btn-marcar {
+    background-color: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-marcar:hover {
+    background-color: #1e52b8;
+}
+
+.btn-excluir {
+    background-color: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.btn-excluir:hover {
+    background-color: #1e52b8;
+}
+
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .livro-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .livro-capa {
+        width: 90px;
+        height: 130px;
+    }
+
+    .lista-livros {
+        grid-template-columns: 1fr;
+    }
+}
+
+.formulario {
+    display: none;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.formulario input,
+.formulario button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
