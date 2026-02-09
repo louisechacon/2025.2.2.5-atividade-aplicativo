@@ -102,8 +102,10 @@ function renderizarLivros() {
                 <span class="status ${livro.lido ? "lido" : "nao-lido"}">
                     ${livro.lido ? "Lido" : "Não lido"}
                 </span>
-                ${!livro.lido ? `<button class="btn-marcar" onclick="marcarComoLido(${index})">Marcar como lido</button>` : ""}
-                <button class="btn-excluir" onclick="confirmarExclusao(${index})">Excluir</button>
+                <button class="btn-marcar" onclick="alternarStatus(${index})">
+                    ${livro.lido ? "Marcar como não lido" : "Marcar como lido"}
+                </button>
+                <span class="material-symbols-outlined icone-excluir" onclick="confirmarExclusao(${index})">delete</span>
             </div>
         `;
 
@@ -113,8 +115,8 @@ function renderizarLivros() {
 
 
 // update
-function marcarComoLido(index) {
-    livros[index].lido = true;
+function alternarStatus(index) {
+    livros[index].lido = !livros[index].lido;
     renderizarLivros();
     salvarLivrosNoBanco();
 }

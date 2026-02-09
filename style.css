@@ -175,3 +175,21 @@ body {
     padding: 10px;
     font-size: 14px;
 }
+
+.livro-card {
+    position: relative;
+}
+
+.icone-excluir {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #888;
+    transition: 0.2s;
+}
+
+.icone-excluir:hover {
+    color: #d11a2a;
+}
